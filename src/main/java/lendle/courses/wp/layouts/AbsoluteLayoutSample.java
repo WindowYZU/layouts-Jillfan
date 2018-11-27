@@ -34,6 +34,15 @@ public class AbsoluteLayoutSample {
         //   and then add them to the frame
         //2. call frame.setResizable(fale), see what will happen
         
+        labelName.setBounds(10,10,100,30);
+        labelTel.setBounds(10,50,100,30);
+        tfName.setBounds(120, 10, 300, 30);
+        tfTel.setBounds(120, 50, 300, 30);
+        frame.add(labelName);
+        frame.add(labelTel);
+        frame.add(tfName);
+        frame.add(tfTel);
+        frame.setResizable(false);
         ////////////////////////////////////////////////////
         frame.setVisible(true);
     }
