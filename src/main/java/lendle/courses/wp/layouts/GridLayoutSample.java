@@ -26,12 +26,18 @@ public class GridLayoutSample {
         // TODO code application logic here
         JFrame frame=new JFrame();
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-        frame.setSize(500, 500);
+        frame.setSize(800, 800);
         GridLayout layout=new GridLayout(3, 2);
         frame.setLayout(layout);
         
         //1. add 6 CustomComponent to the frame
         //2. resize the frame to see the effect
+        
+        for(int i=1; i<=6; i++){
+            CustomComponent c = new CustomComponent();
+            frame.add(c);
+        }
+        
         
         //////////////////////////////////////////////////////////////////////
         
